@@ -1,0 +1,681 @@
+/* Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Shared styles */
+:root{
+    --background-color-1:#1A0B2E;
+    --text-color:#FFFFFF;
+    --second-bg-color:#230E3D;
+    --card-bg-color:#351165;
+    --card-bg-color-2:#250D44;
+}
+li ,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Nav section */
+.nav-bar{
+    max-width: 1600px;
+    background-color:var(--background-color-1) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+}
+.nav-bar .logo{
+    max-width: 219px;
+}
+.nav-bar .menu ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+}
+.nav-bar .menu ul li a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+
+}
+.nav-bar .subscribe-btn{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 12px 16px;
+    background: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+     transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.subscribe-btn:hover {
+  transform: scale(1.40);
+  opacity: 0.9;
+}
+
+ /* Hero Section */
+
+
+ .hero-section{
+  height:760px;
+  background: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+ }
+ .hero-section .for-mic-badge{
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 450px;
+    padding-top: 155px;
+    margin-bottom: 30px;
+    background: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center 90%;
+
+ }
+  .hero-section .for-mic-badge .badge{
+    position: absolute;
+    z-index: 1;
+    top: 21%;
+    left: 70%;
+    cursor: default;
+  }
+  .hero-section .for-mic-badge .badge h5{
+    margin: 0 auto;
+    background-color: #00FF88;
+    width: 75px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0 0 20px rgba(0, 255, 143, 0.6); 
+
+  }
+  .hero-section h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+  }
+  .hero-section p{
+    font-size: 16px;
+    color: var(--text-color);
+    opacity: 80%;
+    margin-bottom: 24px;
+  }
+  .hero-section .btn-1{
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color);
+    border-radius: 1000px;
+    margin-right: 8px;
+    background : linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%); 
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+   .btn-1:hover{
+    transform: scale(1.10);
+  opacity: 0.9;
+
+}
+  
+  .hero-section .btn-2{
+    border: 1px solid #00FF88;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #00FF88;
+    border-radius: 1000px;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+ .btn-2:hover{
+    transform: scale(1.10);
+  opacity: 0.9;
+
+}
+
+/* podcast section */
+
+.podcast-section .podcast{
+  padding: 50px 0 80px 0;
+  text-align: center;
+  background-color: var(--background-color-1);
+
+}
+.podcast-section .podcast .podcast-heading h1{
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+.podcast-section .podcast .podcast-heading p{
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+  opacity: 80%;
+}
+.podcast-section .podcast .podcast-heading p .podcast-peragraph{
+  cursor: default;
+}
+.podcast-section .podcast hr{
+  margin: 80px 200px;
+}
+.podcast-section .podcast .podcast-achives{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  display: flex;
+  gap: 80px;
+}
+.podcast-section .podcast .podcast-achives .podcast-card{
+  width: 240px;
+  margin: 0 auto;
+}
+.podcast-section .podcast .podcast-achives .podcast-card h1{
+  font-weight: 900;
+  font-size: 48px;
+  color: #00FF88;
+  margin-bottom: 16px;
+}
+.podcast-section .podcast .podcast-achives .podcast-card p{
+   font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+  opacity: 80%;
+}
+
+/* Why Choose TechWave Section */
+
+.why-choose-techwave{
+  background-color: var(--second-bg-color);
+  padding-bottom: 120px;
+}
+.why-choose-techwave .techwave-details-div{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.why-choose-techwave .techwave-details-div h1{
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--text-color);
+  padding-top: 120px;
+  margin-bottom: 40px;
+  
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:repeat(3, 1fr);
+  gap: 30px;
+  
+}
+
+/* card style 1 */
+
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-1{
+  
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 40px;
+ background-color: var(--card-bg-color);
+ padding: 40px;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-1 .card-img{
+  margin-bottom: 16px;
+  text-align: start;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-1 h3{
+  margin-bottom: 16px;
+  text-align: start;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-1 p{
+text-align: start;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+opacity: 60%;
+}
+
+/* card style 2 */
+
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-2{
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 40px;
+ background-color: var(--card-bg-color);
+ padding: 40px;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-2 .card-img{
+  margin-bottom: 16px;
+  margin-right: 690px;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-2 h3{
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+  text-align: start;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-2 p{
+text-align: start;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+opacity: 60%;
+}
+
+/* card style 3 */
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-3{
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 40px;
+ background-color: var(--card-bg-color);
+ padding: 40px;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-3 .card-img{
+  margin-bottom: 16px;
+  text-align: start;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-3 h3{
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  text-align: start;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-3 p{
+text-align: start;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+opacity: 60%;
+}
+
+/* card style 4 */
+
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-4{
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 40px;
+ background-color: var(--card-bg-color);
+ padding: 40px;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-4 .card-img{
+  text-align: start;
+  margin-bottom: 16px;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-4 h3{
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  text-align: start;
+  margin-bottom: 16px;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-4 p{
+text-align: start;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+opacity: 60%;
+}
+
+/* card style 5 */
+
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-5{
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 40px;
+ background-color: var(--card-bg-color);
+ padding: 40px;
+
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-5 .card-img{
+  text-align: start;
+  margin-bottom: 16px;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-5 h3{
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+  text-align: start;
+  margin-bottom: 16px;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-5 p{
+text-align: start;
+font-size: 16px;
+line-height: 24px;
+color: var(--text-color);
+opacity: 60%;
+}
+
+/* grid span start */
+
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-1{
+  grid-row: span 2;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-2{
+  grid-column: span 2;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-3{
+  grid-column: span 2;
+}
+.why-choose-techwave .techwave-details-div .why-choose-techwave-cards .techwave-card-4{
+  grid-column: span 2;
+}
+
+/* end */
+
+/* Featured Episodes Section */
+
+
+.Featured-Episodes{
+  background-color: var(--background-color-1);
+  text-align: center;
+  padding-bottom: 120px;
+
+}
+.Featured-Episodes h1{
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--text-color);
+  padding-top: 120px;
+  margin-bottom: 40px;
+}
+.Featured-Episodes .Featured-Episodes-cards{
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  
+}
+.Featured-Episodes .Featured-Episodes-cards .episodes-card{
+  background-color: var(--card-bg-color-2);
+  max-width: 380px;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.Featured-Episodes .Featured-Episodes-cards .episodes-card .video iframe{
+  border: none;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.Featured-Episodes .Featured-Episodes-cards h2{
+  text-align: start;
+  padding: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-color);
+}
+.Featured-Episodes .Featured-Episodes-cards p{
+  padding: 0 24px 12px 24px;
+  text-align: start;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  opacity: 60%;
+
+}
+.Featured-Episodes .Featured-Episodes-cards .time{
+  display: flex;
+  padding: 0 24px 24px;
+}
+.Featured-Episodes .Featured-Episodes-cards .time .watch{
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+}
+.Featured-Episodes .Featured-Episodes-cards .time .watch img{
+  height: 100%;
+  width: 100%;
+}
+.Featured-Episodes .Featured-Episodes-cards .time .minutes p{
+  margin-left: -14px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00FF88;
+}
+.the-host-section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.the-host-section h1{
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+.the-host-section .the-host-card{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background-color: var(--card-bg-color-2);
+  border-radius: 40px;
+}
+.the-host-section .the-host-card .host-img{
+  padding: 40px;
+}
+.the-host-section .the-host-card .host-details{
+  max-width: 896px;
+  margin: 0 auto;
+}
+.the-host-section .the-host-card .host-details h3{
+  text-align: start;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-color);
+}
+.the-host-section .the-host-card .host-details p{
+  text-align: start;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  opacity: 60%;
+  margin-bottom: 16px;
+}
+.the-host-section .the-host-card .host-details .social-icons{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.the-host-section .the-host-card .host-details .social-icons .icon{
+  height: 40px;
+  width: 40px;
+  border: 1px solid #533C72;
+  padding: 10px;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.the-host-section .the-host-card .host-details .social-icons .icon img{
+  height: 100%;
+  width: 100%;
+}
+
+/* footer section */
+
+.footer-section{
+  text-align: center;
+}
+.footer-section .techwave-footer{
+  background: url(./assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px;
+}
+.footer-section .techwave-footer .footer-logo{
+  margin-bottom: 32px;
+}
+.footer-section .techwave-footer .social-podcasts{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+
+}
+.footer-section .techwave-footer .social-podcasts .podcast-logo{
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+.footer-section .techwave-footer .social-podcasts .podcast-logo p{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+  opacity: 60%;
+}
+.footer-section .techwave-footer .copyrights p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  opacity: 60%;
+
+}
+
+/* Responsive design Start */
+@media (max-width:576px) {
+  body{
+    max-width: 576px;
+    margin: 0 auto;
+  }
+  .nav-bar .logo{
+    margin-right: 283px;
+
+  }
+  .nav-bar .for-mobile{
+    text-align: end;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+  .hero-section p{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .podcast-section .podcast .podcast-heading p{
+    width: 530px;
+  }
+  .podcast-section .podcast hr{
+    max-width: 530px;
+    margin: 40px auto;
+    
+  }
+  .podcast-section .podcast .podcast-achives{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .why-choose-techwave .techwave-details-div .why-choose-techwave-cards{
+    grid-template-columns: 1fr;
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  .Featured-Episodes .Featured-Episodes-cards{
+    flex-direction: column;
+  }
+  .the-host-section .the-host-card{
+    max-width: 530px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .the-host-section .the-host-card .host-details{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .the-host-section .the-host-card .host-details h3{
+    text-align: center;
+  }
+  .the-host-section .the-host-card .host-details p{
+    text-align: center;
+  }
+  .the-host-section .the-host-card .host-details .social-icons{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .footer-section{
+    max-width: 576px;
+    margin: 0 auto;
+  }
+  .footer-section .techwave-footer .social-podcasts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-section .techwave-footer{
+    background: url(./assets/mobile-footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 576px;
+    height: 460px;
+  }
+  .footer-section .techwave-footer .footer-logo-for-mobile{
+    margin-bottom: 24px;
+  }
+
+  /* display hidden */
+
+.nav-bar .menu, .subscribe-btn ,.footer-section .techwave-footer .footer-logo{
+  display: none;
+}
+
+
+  
+}
+
+
+
+@media (min-width:577px) {
+  .nav-bar .for-mobile, .footer-section .techwave-footer .footer-logo-for-mobile{
+    display: none;
+  }
+  {}
+
+
+  
+}
+
+
+/* END */
+
+
+
+
+
